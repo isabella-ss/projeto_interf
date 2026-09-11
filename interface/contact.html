@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Bananas de Pijamas</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: rgb(71, 32, 32);">
+
+        <nav>
+            <ul style="display: flex; justify-content: space-around; align-items: center; background-color: #fffd84; padding: 16px; margin: 0; list-style: none; flex-wrap: wrap;">
+                <li><a href="index.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Início</a></li>
+                <li><a href="blog.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Blog</a></li>
+                <li><a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Notícias</a></li>
+                <li><a href="contact.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Contato</a></li>
+                <li><a href="about.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <main style="max-width: 600px; margin: 0 auto;">
+            
+            <header>
+                <h1 style="background-color: hsl(54, 100%, 52%); color: #333; font-size: 40px; font-family: Georgia, serif; text-align: center; padding: 15px; margin-top: 20px; border-radius: 8px;">
+                    Fale Conosco
+                </h1>
+                <p style="color: hsl(54, 100%, 70%); font-family: Georgia, serif; text-align: center; font-size: 20px;">
+                    Envie sua mensagem diretamente para nossa equipe!
+                </p>
+            </header>
+
+            <section style="margin-top: 30px; background-color: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 8px;">
+                
+                <form action="https://formsubmit.co/isabella.saboia@sempreceub.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                    
+                    
+                    <input type="hidden" name="_subject" value="Nova mensagem do site Bananas de Pijamas!">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="name" style="color: #ffe659; font-family: Georgia, serif; font-size: 16px;">Nome:</label>
+                        <input type="text" id="name" name="name" required style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 16px;">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="email" style="color: #ffe659; font-family: Georgia, serif; font-size: 16px;">E-mail:</label>
+                        <input type="email" id="email" name="email" required style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 16px;">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="message" style="color: #ffe659; font-family: Georgia, serif; font-size: 16px;">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" style="background-color: #ffea29; color: #333; font-family: Georgia, serif; font-size: 18px; font-weight: bold; border: none; padding: 12px; border-radius: 6px; cursor: pointer; margin-top: 10px;">
+                        Enviar Mensagem
+                    </button>
+                </form>
+
+            </section>
+
+        </main>
+
+    </body>
+</html>

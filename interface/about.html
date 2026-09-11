@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre - Bananas de Pijamas</title>
+        <style>
+            /* Animações e Estilos Interativos Embutidos */
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(15px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes pulseGlow {
+                0% { box-shadow: 0 0 5px rgba(255, 234, 41, 0.3); }
+                50% { box-shadow: 0 0 15px rgba(255, 234, 41, 0.7); }
+                100% { box-shadow: 0 0 5px rgba(255, 234, 41, 0.3); }
+            }
+
+            .animated-section {
+                animation: fadeIn 0.8s ease-in-out;
+            }
+
+            .interactive-card {
+                background-color: rgba(255, 255, 255, 0.08);
+                border: 2px solid transparent;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .interactive-card:hover {
+                transform: translateY(-5px);
+                border-color: #ffea29;
+                background-color: rgba(255, 255, 255, 0.12);
+                animation: pulseGlow 2s infinite;
+            }
+
+            .card-details {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+                opacity: 0;
+            }
+
+            .interactive-card.active .card-details {
+                max-height: 200px;
+                opacity: 1;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: rgb(71, 32, 32);">
+
+        <nav>
+            <ul style="display: flex; justify-content: space-around; align-items: center; background-color: #fffd84; padding: 16px; margin: 0; list-style: none; flex-wrap: wrap;">
+                <li><a href="index.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Início</a></li>
+                <li><a href="blog.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Blog</a></li>
+                <li><a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Notícias</a></li>
+                <li><a href="contact.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Contato</a></li>
+                <li><a href="about.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <main style="max-width: 800px; margin: 0 auto;" class="animated-section">
+            
+            <header>
+                <h1 style="background-color: hsl(54, 100%, 52%); color: #333; font-size: 40px; font-family: Georgia, serif; text-align: center; padding: 15px; margin-top: 20px; border-radius: 8px;">
+                    Sobre o Universo Geek
+                </h1>
+                <p style="color: hsl(54, 100%, 70%); font-family: Georgia, serif; text-align: center; font-size: 22px;">
+                    Mergulhe na cultura dos jogos, desenhos animados e séries de TV que marcam gerações!
+                </p>
+            </header>
+
+            <section style="margin-top: 40px;">
+                <p style="color: #f0f0f0; font-family: Georgia, serif; text-align: center; line-height: 1.6; font-size: 18px; margin-bottom: 30px;">
+                    Clique nos tópicos abaixo para explorar os pilares da nossa paixão pelo entretenimento:
+                </p>
+
+                <!-- Bloco Interativo 1: Jogos -->
+                <div class="interactive-card" onclick="toggleCard(this)">
+                    <h2 style="color: #ffea29; font-family: Georgia, serif; font-size: 24px; margin: 0;">
+                        Cultura de Jogos (Games)
+                    </h2>
+                    <div class="card-details">
+                        <p style="color: #ffffff; font-family: Georgia, serif; font-size: 16px; line-height: 1.5; margin: 0;">
+                            Dos clássicos de arcade aos imensos mundos abertos atuais, os games revolucionaram a forma como contamos histórias. Aqui celebramos desde os velhos consoles até os e-sports modernos.
+                        </p>
+                    </div>
+                </div>
+
+              
+                <div class="interactive-card" onclick="toggleCard(this)">
+                    <h2 style="color: #ffea29; font-family: Georgia, serif; font-size: 24px; margin: 0;">
+                      Desenhos Animados e Clássicos
+                    </h2>
+                    <div class="card-details">
+                        <p style="color: #ffffff; font-family: Georgia, serif; font-size: 16px; line-height: 1.5; margin: 0;">
+                            Animações que moldaram infâncias — incluindo duplas inesquecíveis como B1 e B2! A magia dos desenhos está em unir traços criativos, bom humor e lições atemporais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloco Interativo 3: Séries de TV -->
+                <div class="interactive-card" onclick="toggleCard(this)">
+                    <h2 style="color: #ffea29; font-family: Georgia, serif; font-size: 24px; margin: 0;">
+                         Séries de TV e Cultura Pop
+                    </h2>
+                    <div class="card-details">
+                        <p style="color: #ffffff; font-family: Georgia, serif; font-size: 16px; line-height: 1.5; margin: 0;">
+                            As narrativas seriadas que prendem nossa atenção episódio após episódio. Ficção científica, fantasia e comédias que viram assunto obrigatório nas rodas de conversa.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <script>
+            // Função para interatividade dos cards (abre e fecha o conteúdo ao clicar)
+            function toggleCard(cardElement) {
+                // Fecha os outros cards se quiser apenas um aberto por vez (opcional)
+                const cards = document.querySelectorAll('.interactive-card');
+                cards.forEach(card => {
+                    if (card !== cardElement) {
+                        card.classList.remove('active');
+                    }
+                });
+                // Alterna o estado do card clicado
+                cardElement.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

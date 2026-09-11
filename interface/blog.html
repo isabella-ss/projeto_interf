@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog - Bananas de Pijamas</title>
+        <style>
+            .news-ticker {
+                background-color: #fffd84;
+                color: #333;
+                padding: 12px 15px;
+                border-radius: 8px;
+                margin: 25px 0;
+                overflow: hidden;
+                white-space: nowrap;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .ticker-content {
+                display: inline-block;
+                animation: marquee 25s linear infinite;
+                font-family: Georgia, serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .ticker-content span {
+                margin-right: 50px;
+            }
+            @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+            }
+        </style>
+    </head>
+    <body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: rgb(71, 32, 32);">
+
+        <nav>
+            <ul style="display: flex; justify-content: space-around; align-items: center; background-color: #fffd84; padding: 16px; margin: 0; list-style: none; flex-wrap: wrap;">
+                <li><a href="index.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Início</a></li>
+                <li><a href="blog.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Blog</a></li>
+                <li><a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Notícias</a></li>
+                <li><a href="contact.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Contato</a></li>
+                <li><a href="about.html" style="text-decoration: none; color: #333; font-size: 16px; font-weight: bold; padding: 8px 16px;">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <main style="max-width: 800px; margin: 0 auto;">
+            
+            <header>
+                <h1 style="background-color: hsl(54, 100%, 52%); color: #333; font-size: 40px; font-family: Georgia, serif; text-align: center; padding: 15px; margin-top: 20px; border-radius: 8px;">
+                    Blog Geek e Desenhos
+                </h1>
+                <p style="color: hsl(54, 100%, 70%); font-family: Georgia, serif; text-align: center; font-size: 24px;">
+                    Fique por dentro das novidades do universo dos desenhos e da cultura pop
+                </p>
+            </header>
+
+            
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <span>🍌 Destaque: As últimas novidades sobre cultura geek, animações e séries clássicas atualizadas para você!</span>
+                    <span>📺 Acompanhe os lançamentos dos seus desenhos favoritos no Google Notícias.</span>
+                    <span>🚀 Universo pop e animações em tempo real!</span>
+                </div>
+            </div>
+
+            <section style="margin-top: 30px; background-color: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                <h2 style="color: #ffea29; font-family: Georgia, serif; font-size: 28px; margin-bottom: 10px;">
+                    Central de Atualizações de Cultura Geek
+                </h2>
+                <p style="color: #f0f0f0; font-family: Georgia, serif; font-size: 16px; margin-bottom: 20px; line-height: 1.5;">
+                    Abaixo você confere o painel integrado contendo as legendas e matérias mais recentes sobre o mundo dos desenhos animados, séries e cultura pop extraídas diretamente do Google Notícias.
+                </p>
+
+    
+                <div style="background-color: #ffffff; padding: 15px; border-radius: 8px; overflow: hidden;">
+                    <iframe src="https://news.google.com/rss/search?q=desenhos+animados+cultura+geek&hl=pt-BR&gl=BR&ceid=BR:pt-419" width="100%" height="450px" style="border: none; border-radius: 4px;"></iframe>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
